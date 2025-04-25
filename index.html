@@ -40,6 +40,8 @@
         .title-bar-button {
             background-color: #c0c0c0;
             border: 1px outset #ffffff;
+            border-right: 1px solid #000000;
+            border-bottom: 1px solid #000000;
             width: 16px;
             height: 14px;
             display: flex;
@@ -47,6 +49,19 @@
             align-items: center;
             font-size: 10px;
             cursor: default;
+            color: #000000;
+        }
+        .title-bar-button.minimize::before {
+            content: "−";
+            font-weight: bold;
+        }
+        .title-bar-button.maximize::before {
+            content: "□";
+            font-weight: bold;
+        }
+        .title-bar-button.close::before {
+            content: "×";
+            font-weight: bold;
         }
         .button {
             background-color: #c0c0c0;
@@ -98,9 +113,9 @@
         <div class="title-bar">
             <span>Voodoo Token - The Ultimate MemeCoin!</span>
             <div class="title-bar-buttons">
-                <div class="title-bar-button">-</div>
-                <div class="title-bar-button">🗖</div>
-                <div class="title-bar-button">X</div>
+                <div class="title-bar-button minimize"></div>
+                <div class="title-bar-button maximize"></div>
+                <div class="title-bar-button close"></div>
             </div>
         </div>
         <div class="content">
