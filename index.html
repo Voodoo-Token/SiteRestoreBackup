@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>Voodoo Token</title>
@@ -28,6 +29,24 @@
             padding: 5px;
             font-weight: bold;
             border: 2px outset #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .title-bar-buttons {
+            display: flex;
+            gap: 2px;
+        }
+        .title-bar-button {
+            background-color: #c0c0c0;
+            border: 1px outset #ffffff;
+            width: 16px;
+            height: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 10px;
+            cursor: default;
         }
         .button {
             background-color: #c0c0c0;
@@ -76,7 +95,14 @@
 </head>
 <body>
     <div class="container">
-        <div class="title-bar">Voodoo Token - The Ultimate MemeCoin!</div>
+        <div class="title-bar">
+            <span>Voodoo Token - The Ultimate MemeCoin!</span>
+            <div class="title-bar-buttons">
+                <div class="title-bar-button">-</div>
+                <div class="title-bar-button">🗖</div>
+                <div class="title-bar-button">X</div>
+            </div>
+        </div>
         <div class="content">
             <center>
                 <h1 class="rainbow-text">Welcome to Voodoo Token!</h1>
